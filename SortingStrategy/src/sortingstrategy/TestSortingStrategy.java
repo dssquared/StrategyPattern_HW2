@@ -16,7 +16,13 @@ public class TestSortingStrategy {
      */
     public static void main(String[] args) {
         
+        int[] theArray = {11,3, 8, 4, 9, 2};
         
-    }
+        MathProgram program = new MathProgram();
+        
+        program.printArray(theArray);  // for debug purposes
+    }  // end main()
     
-}
+   
+    
+}  // end class
