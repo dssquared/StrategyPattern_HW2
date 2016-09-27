@@ -11,7 +11,18 @@ package sortingstrategy;
  */
 public class Insertion implements Sorter {
     
-    public int[] mathSort(int[]arr){
-        return arr;
-    }
+    public int[] mathSort(int[] array){
+		for(i = 0; i < array.length; i++){
+			int smallestIndex = i;
+			for(j = 0; j < array.length; j++){
+				if(array[j] < array[smallestIndex]){
+					smallestIndex = j;
+				}
+			}
+			int smallestNum = array[smallestIndex];
+			array[smallestIndex] = array[i];
+			array[i] = smallestNum;
+		}
+		return array;
+	}
 }
