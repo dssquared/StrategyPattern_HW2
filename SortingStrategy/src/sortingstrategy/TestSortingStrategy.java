@@ -18,7 +18,7 @@ public class TestSortingStrategy {
         
         int[] theArray = {11,3, 8, 4, 9, 2};
         
-        MathProgram program = new MathProgram();
+        MathSoftware program = new MathSoftware();
         
         program.printArray(theArray);  // for debug purposes
         

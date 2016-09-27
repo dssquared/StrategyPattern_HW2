@@ -12,8 +12,8 @@ package sortingstrategy;
 public class MTool implements Sorter {
     
     public int[] mathSort(int[] array){
-		if(list.length <= 1){
-			return list;
+		if(array.length <= 1){
+			return array;
 		}
 		int[] front = new int[array.length/2];
 		int[] back = new int[array.length-front.length];

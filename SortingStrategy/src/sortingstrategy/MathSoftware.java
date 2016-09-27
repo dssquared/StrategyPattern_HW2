@@ -11,10 +11,24 @@ package sortingstrategy;
  */
 public class MathSoftware {
     
+    public MathSoftware(){
+        Sorter sortingType;
+    }
+    
     public Sorter sortingType;
     
     public void setSortStrategy(Sorter newSortType){
         sortingType = newSortType;
     }
+    
+    public void printArray(int[] arr){
+        
+        System.out.println("The contents of the array: ");
+        for(int i = 0; i < arr.length; i++){
+            System.out.print(arr[i] + ", ");
+        }
+        System.out.println();
+        
+    }  // end printArray()
     
 }
