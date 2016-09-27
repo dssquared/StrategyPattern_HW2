@@ -9,6 +9,7 @@ package sortingstrategy;
  *
  * @author David Schwehr <dpschwehr[AT]gmail[dotCOM]> github: dssquared
  */
+
 public class Mathematica implements Sorter{
 	public int[] mathSort(int[] array){
 		for(int i = 0; i < array.length; i++){
