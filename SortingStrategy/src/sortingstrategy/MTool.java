@@ -9,9 +9,11 @@ package sortingstrategy;
  *
  * @author David Schwehr <dpschwehr[AT]gmail[dotCOM]> github: dssquared
  */
-public class MTool extends MathSoftware {
+public class MTool implements Sorter {
     
-    public MTool(){
-        sortingType = new Merge();
+    public int[] mathSort(int[] arr){
+        // Merg sort algo goes here
+        return arr;
     }
+    
 }

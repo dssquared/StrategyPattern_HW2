@@ -9,9 +9,11 @@ package sortingstrategy;
  *
  * @author David Schwehr <dpschwehr[AT]gmail[dotCOM]> github: dssquared
  */
-public class MyMath extends MathSoftware {
+public class MyMath implements Sorter {
     
-    public MyMath(){
-        sortingType = new Bubble();
+    public int[] mathSort(int[] arr){
+        // Bubble sort algo goes here
+        return arr;
     }
-}
+    
+} // end class

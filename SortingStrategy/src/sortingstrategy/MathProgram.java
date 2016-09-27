@@ -9,9 +9,11 @@ package sortingstrategy;
  *
  * @author David Schwehr <dpschwehr[AT]gmail[dotCOM]> github: dssquared
  */
-public class Merge implements Sorter {
+public class MathProgram extends MathSoftware{
     
-    public int[] mathSort(int[] arr){
-        return arr;
+    public MathProgram(){
+        sortingType = new Mathematica();
     }
+    
+    
 }

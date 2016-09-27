@@ -9,9 +9,11 @@ package sortingstrategy;
  *
  * @author David Schwehr <dpschwehr[AT]gmail[dotCOM]> github: dssquared
  */
-public class Mathematica extends MathSoftware {
+public class Mathematica implements Sorter {
     
-    public Mathematica(){
-        sortingType = new Insertion();
+    public int[] mathSort(int[] arr){
+        //  insertion sort algo goes here
+        return arr;
     }
-}
+    
+}  // end class
