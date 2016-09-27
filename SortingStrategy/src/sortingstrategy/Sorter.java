@@ -13,11 +13,11 @@ public interface Sorter {
     
     public int[] mathSort(int[] arr);
 }
-class Mathematica implements Sorter{
+class Insertion implements Sorter{
 	public int[] mathSort(int[] array){
-		for(i = 0; i < array.length; i++){
+		for(int i = 0; i < array.length; i++){
 			int smallestIndex = i;
-			for(j = 0; j < array.length; j++){
+			for(int j = i; j < array.length; j++){
 				if(array[j] < array[smallestIndex]){
 					smallestIndex = j;
 				}
@@ -29,10 +29,10 @@ class Mathematica implements Sorter{
 		return array;
 	}
 }
-class MTool implements Sorter{
+class Merge implements Sorter{
 	public int[] mathSort(int[] array){
-		if(list.length <= 1){
-			return list;
+		if(array.length <= 1){
+			return array;
 		}
 		int[] front = new int[array.length/2];
 		int[] back = new int[array.length-front.length];
@@ -53,16 +53,16 @@ class MTool implements Sorter{
 					if(front[j]<back[k]){
 						array[i] = front[j];
 						i++;
-						if(j+1 < front.length){
-							j++;
-						}
+//						if(j+1 < front.length){
+						j++;
+//						}
 					}
 					else{
 						array[i] = back[k];
 						i++;
-						if(k+1 < back.length){
+//						if(k+1 < back.length){
 							k++;
-						}
+//						}
 					}
 				}
 			}
@@ -70,14 +70,14 @@ class MTool implements Sorter{
 		return array;
 	}
 }
-class MyMath implements Sorter{
+class Bubble implements Sorter{
 	public int[] mathSort(int[] array){
-		for(i = 0; i < array.length; i++){
-			for(j = 1; j < array.length - i; j++){
+		for(int i = 0; i < array.length; i++){
+			for(int j = 1; j < array.length - i; j++){
 				if(array[j-1] > array[j]){
 					int numJ = array[j];
-					array[j] = array[j+1];
-					array[j+1] = numJ;
+					array[j] = array[j-1];
+					array[j-1] = numJ;
 				}
 			}
 		}

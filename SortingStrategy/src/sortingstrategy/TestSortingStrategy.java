@@ -15,7 +15,12 @@ public class TestSortingStrategy {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+        int[] array = {11, 4, 7, 9, 2, 1};
+        MathSoftware program = new MTool();
+        program.mathSort(array);
+        for(int i = 0; i < array.length; i++){
+            System.out.print(array[i] + " ");
+        }
     }
     
 }

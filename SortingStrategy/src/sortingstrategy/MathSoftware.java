@@ -16,5 +16,8 @@ public class MathSoftware {
     public void setSortStrategy(Sorter newSortType){
         sortingType = newSortType;
     }
+    public int[] mathSort(int[] array){
+        return sortingType.mathSort(array);
+    }
     
 }
