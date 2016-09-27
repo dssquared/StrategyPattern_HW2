@@ -11,7 +11,9 @@ package sortingstrategy;
  */
 
 public class Mathematica implements Sorter{
+    
 	public int[] mathSort(int[] array){
+            
 		for(int i = 0; i < array.length; i++){
 			int smallestIndex = i;
 			for(int j = 0; j < array.length; j++){
