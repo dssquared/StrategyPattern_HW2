@@ -53,16 +53,32 @@ class Merge implements Sorter{
 					if(front[j]<back[k]){
 						array[i] = front[j];
 						i++;
-//						if(j+1 < front.length){
-						j++;
-//						}
+						if(j+1 < front.length){
+                                                    j++;
+						}
+                                                else{
+                                                    while(k < back.length && i < array.length){
+                                                        array[i]=back[k];
+                                                        i++;
+                                                        k++;
+                                                    }
+                                                    j = front.length;
+                                                }
 					}
 					else{
 						array[i] = back[k];
 						i++;
-//						if(k+1 < back.length){
+						if(k+1 < back.length && i < array.length){
 							k++;
-//						}
+						}
+                                                else{
+                                                    while(j < front.length){
+                                                        array[i]=front[j];
+                                                        i++;
+                                                        j++;
+                                                    }
+                                                    k = back.length;
+                                                }
 					}
 				}
 			}
