@@ -11,4 +11,7 @@ package sortingstrategy;
  */
 public class MyMath extends MathSoftware {
     
+    public MyMath(){
+        sortingType = new Bubble();
+    }
 }

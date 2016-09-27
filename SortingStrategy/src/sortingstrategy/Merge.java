@@ -11,4 +11,7 @@ package sortingstrategy;
  */
 public class Merge implements Sorter {
     
+    public int[] mathSort(int[] arr){
+        return arr;
+    }
 }

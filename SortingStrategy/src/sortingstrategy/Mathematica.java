@@ -11,4 +11,7 @@ package sortingstrategy;
  */
 public class Mathematica extends MathSoftware {
     
+    public Mathematica(){
+        sortingType = new Insertion();
+    }
 }

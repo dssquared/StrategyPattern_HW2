@@ -11,4 +11,5 @@ package sortingstrategy;
  */
 public interface Sorter {
     
+    public int[] mathSort(int[] arr);
 }

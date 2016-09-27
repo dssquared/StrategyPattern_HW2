@@ -11,4 +11,7 @@ package sortingstrategy;
  */
 public class MTool extends MathSoftware {
     
+    public MTool(){
+        sortingType = new Merge();
+    }
 }
