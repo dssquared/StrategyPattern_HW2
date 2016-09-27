@@ -11,10 +11,6 @@ package sortingstrategy;
  */
 public class MathSoftware {
     
-    public MathSoftware(){
-        Sorter sortingType;
-    }
-    
     public Sorter sortingType;
     
     public void setSortStrategy(Sorter newSortType){

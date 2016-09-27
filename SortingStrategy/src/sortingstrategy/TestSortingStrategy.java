@@ -21,6 +21,7 @@ public class TestSortingStrategy {
         MathSoftware program = new MathSoftware();
         
         program.printArray(theArray);  // for debug purposes
+        program.mathSort(theArray);
         
     }  // end main()
     
