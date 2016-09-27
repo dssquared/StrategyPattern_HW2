@@ -11,7 +11,16 @@ package sortingstrategy;
  */
 public class Bubble implements Sorter {
     
-    public int[] mathSort(int[] arr){
-        return arr;
-    }
+    public int[] mathSort(int[] array){
+		for(i = 0; i < array.length; i++){
+			for(j = 1; j < array.length - i; j++){
+				if(array[j-1] > array[j]){
+					int numJ = array[j];
+					array[j] = array[j+1];
+					array[j+1] = numJ;
+				}
+			}
+		}
+		return array;
+	}
 }
